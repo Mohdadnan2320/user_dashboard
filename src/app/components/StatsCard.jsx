@@ -242,7 +242,7 @@ const StatsCard = () => {
 
   return (
     <div className="p-5 lg:w-[80vw] lg:pr:2">
-      <h2 className="mt-5">Skill Test</h2>
+      <h2 className="mt-5 mb-5 sm:mb-0">Skill Test</h2>
       <div className="lg:flex  lg:mt-5 gap-5 lg:gap-3">
         <div>
           {/* Main card code which will update */}
