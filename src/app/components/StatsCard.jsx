@@ -509,8 +509,8 @@ const StatsCard = () => {
 
             {/* Rank Input */}
             <div className="mb-4">
-              <div className="lg:my-5 lg:flex lg:justify-between">
-                <div className="flex items-center gap-3 mb-3">
+              <div className="lg:mt-5 lg:mb-2 lg:flex lg:justify-between">
+                <div className="flex items-center gap-3 mb-3 lg:mb-0">
                   <div className="bg-blue-950 text-white font-semibold h-8 w-8 rounded-full grid place-content-center">
                     <h3>1</h3>
                   </div>
@@ -530,23 +530,23 @@ const StatsCard = () => {
                     errors.rank
                       ? "border-red-500 lg:translate-x-[-25px]"
                       : "border-blue-600"
-                  } rounded-md p-2 transition-transform duration-200 lg:w-48`}
+                  } rounded-md p-2 transition-transform duration-200  lg:w-48`}
                 />
               </div>
               <div
-                className={` justify-end items-end text-xs ${
+                className={`mb-5 justify-end items-end text-xs ${
                   errors.rank ? "lg:flex lg:translate-x-[-40px]" : "hidden"
                 }`}
               >
                 {errors.rank && (
-                  <span className="text-red-500 text-sm">{errors.rank}</span>
+                  <span className="text-red-500 text-sm leading-none">{errors.rank}</span>
                 )}
               </div>
             </div>
 
             {/* Percentile Input */}
             <div className="mb-4">
-              <div className="lg:my-5 lg:flex lg:justify-between">
+              <div className="lg:mt-5 lg:mb-2 lg:flex lg:justify-between">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="bg-blue-950 text-white font-semibold h-8 w-8 rounded-full grid place-content-center">
                     <h3>2</h3>
@@ -571,12 +571,12 @@ const StatsCard = () => {
                 />
               </div>
               <div
-                className={`justify-end items-end text-xs ${
+                className={`mb-5 justify-end items-end text-xs ${
                   errors.percentile ? "lg:flex lg:translate-x-[-40px]" : "hidden"
                 }`}
               >
                 {errors.percentile && (
-                  <span className="text-red-500 text-sm">
+                  <span className="text-red-500 text-sm leading-none">
                     {errors.percentile}
                   </span>
                 )}
@@ -585,7 +585,7 @@ const StatsCard = () => {
 
             {/* Current Score Input */}
             <div className="mb-4">
-              <div className="lg:my-5 lg:flex lg:justify-between">
+              <div className="lg:mt-5 lg:mb-2 lg:flex lg:justify-between">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="bg-blue-950 text-white font-semibold h-8 w-8 rounded-full grid place-content-center">
                     <h3>3</h3>
@@ -614,12 +614,12 @@ const StatsCard = () => {
                 />
               </div>
               <div
-                className={`justify-end items-end text-xs ${
+                className={`mb-5 justify-end items-end text-xs ${
                   errors.currentScore ? "lg:flex lg:translate-x-[-40px]" : "hidden"
                 }`}
               >
                 {errors.currentScore && (
-                  <span className="text-red-500 text-sm">
+                  <span className="text-red-500 text-sm leading-none">
                     {errors.currentScore}
                   </span>
                 )}
